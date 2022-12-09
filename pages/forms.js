@@ -11,6 +11,7 @@ import {
   FormControl,
   Button,
 } from "@mui/material";
+import NextLink from "next/link";
 import BaseCard from "../src/components/baseCard/BaseCard";
 
 const Forms = () => {
@@ -83,9 +84,11 @@ const Forms = () => {
             </FormControl>
           </Stack>
           <br />
-          <Button variant="contained" mt={2}>
-            Submit
-          </Button>
+          <NextLink href="/buttons">
+            <Button variant="contained" mt={2}>
+              Submit
+            </Button>
+          </NextLink>
         </BaseCard>
       </Grid>
 
