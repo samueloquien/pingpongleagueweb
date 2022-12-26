@@ -2,14 +2,24 @@ import React from "react";
 import FeatherIcon from "feather-icons-react";
 import { AppBar, Box, IconButton, Toolbar } from "@mui/material";
 import PropTypes from "prop-types";
+import Image from "next/image";
 // Dropdown Component
 import SearchDD from "./SearchDD";
 import ProfileDD from "./ProfileDD";
+import pingpongimage from "../../../assets/images/backgrounds/pingpong.jpg";
 
 const Header = ({ sx, customClass, toggleMobileSidebar, position }) => {
   return (
     <AppBar sx={sx} position={position} elevation={0} className={customClass}>
       <Toolbar>
+        <Image
+          src={pingpongimage}
+          alt={pingpongimage}
+          width="300"
+          height="100"
+          //className="roundedCircle"
+        />
+        Ping pong league!
         <IconButton
           size="large"
           color="inherit"
